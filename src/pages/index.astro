@@ -1,4 +1,6 @@
 ---
+import { TestButton } from "../components/test-button";
+
 console.log("This runs in your terminal, not the browser!");
 const now = new Date();
 ---
@@ -11,6 +13,7 @@ const now = new Date();
     <h1>Hello, World!</h1>
     <p>こんにちは</p>
     <p>{now}</p>
+    <TestButton client:load />
   </body>
 </html>
 <style>

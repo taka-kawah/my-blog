@@ -4,7 +4,7 @@
   "description": "",
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,7 +13,10 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "astro": "^5.13.10"
+    "@astrojs/react": "^4.3.1",
+    "astro": "^5.13.10",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "typescript": "^5.9.2"
