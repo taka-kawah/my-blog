@@ -1,8 +1,14 @@
 ---
+import type { MarkdownInstance } from "astro";
 import { TestButton } from "../components/test-button";
+import type { Frontmatter } from "../types/frontmatter";
 
 console.log("This runs in your terminal, not the browser!");
 const now = new Date();
+
+const blogs = Object.values(
+  import.meta.glob("./blog/*.md", { eager: true })
+) as MarkdownInstance<Frontmatter>[];
 ---
 
 <html lang="ja">
@@ -14,6 +20,10 @@ const now = new Date();
     <p>こんにちは</p>
     <p>{now}</p>
     <TestButton client:load />
+    <div>
+      記事一覧<br />
+      {blogs.map((blog) => <a href={blog.url}>{blog.frontmatter.title}</a>)}
+    </div>
   </body>
 </html>
 <style>
