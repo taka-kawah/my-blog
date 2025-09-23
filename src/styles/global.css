@@ -1,4 +1,18 @@
+@config "../../tailwind.config.mjs";
+
 @layer theme, base, components, utilities;
+
+/*Delta Gothic One*/
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+/*M Plus Rounded*/
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+/*Hachi Maru Pop*/
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+/*Reggae One*/
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
 
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/utilities.css" layer(utilities);
