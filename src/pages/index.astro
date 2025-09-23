@@ -2,6 +2,7 @@
 import type { MarkdownInstance } from "astro";
 import { TestButton } from "../components/test-button";
 import type { Frontmatter } from "../types/frontmatter";
+import "../styles/global.css";
 
 console.log("This runs in your terminal, not the browser!");
 const now = new Date();
@@ -19,7 +20,7 @@ const blogs = Object.values(
   </head>
   <body>
     <h1>Hello, World!</h1>
-    <p>こんにちは</p>
+    <p class="text-3xl font-bold">こんにちは</p>
     <p>{now}</p>
     <TestButton client:load />
     <div>

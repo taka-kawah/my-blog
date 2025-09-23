@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/global.css";
 
 export const TestButton = () => {
   const [count, setCount] = useState(0);
@@ -6,7 +7,10 @@ export const TestButton = () => {
     <div>
       <strong>{count}</strong>
       <br />
-      <button onClick={() => setCount((prev) => prev + 1)}>
+      <button
+        className="font-bold"
+        onClick={() => setCount((prev) => prev + 1)}
+      >
         おせおせおせおせ
       </button>
     </div>
