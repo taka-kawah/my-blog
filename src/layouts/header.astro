@@ -1,26 +1,22 @@
 ---
-
+import { LinkIcon } from "../components/link-icon";
 ---
 
 <div class="bg-stone-300 rounded-xl flex flex-row">
   <div id="icons" class="basis-1/4">
     <div id="icon-box" class="pt-15 px-5">
-      <a
+      <LinkIcon
+        alt="Github"
         href="https://github.com/taka-kawah"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="px-1"
-      >
-        <img src="/mark-github-24.svg" alt="GitHub" width="36" height="36" />
-      </a>
-      <a
+        pic="/mark-github-24.svg"
+        className="px-1"
+      />
+      <LinkIcon
+        alt="Bluesky"
         href="https://bsky.app/profile/ataroh.bsky.social"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="px-1"
-      >
-        <img src="/Bluesky_Logo.svg" alt="Bluesky" width="36" height="36" />
-      </a>
+        pic="/Bluesky_Logo.svg"
+        className="px-1"
+      />
     </div>
   </div>
   <div id="title-box" class="basis-1/2">
