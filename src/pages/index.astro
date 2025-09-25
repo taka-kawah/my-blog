@@ -3,6 +3,7 @@ import type { MarkdownInstance } from "astro";
 import { TestButton } from "../components/test-button";
 import type { Frontmatter } from "../types/frontmatter";
 import "../styles/global.css";
+import Header from "../layouts/header.astro";
 
 console.log("This runs in your terminal, not the browser!");
 
@@ -18,19 +19,17 @@ const blogs = Object.values(
     <link rel="icon" href="../../public/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
-    <h1 class="font-dela-gothic-one text-5xl text-center">こんにちは</h1>
+    <Header />
     <TestButton client:load />
     <div class="grid place-content-center">
       <h2 class="font-reggae-one text-3xl">記事一覧</h2>
-      {blogs.map((blog) => <a href={blog.url}>{blog.frontmatter.title}</a>)}
+      {
+        blogs.map((blog) => (
+          <a class="font-m-plus-rounded" href={blog.url}>
+            {blog.frontmatter.title}
+          </a>
+        ))
+      }
     </div>
   </body>
 </html>
-<style>
-  h1 {
-    color: orange;
-  }
-  h2 {
-    color: red;
-  }
-</style>
