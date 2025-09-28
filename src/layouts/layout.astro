@@ -1,0 +1,17 @@
+---
+import Header from "./header.astro";
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ataroh blog</title>
+    <link rel="icon" href="../../public/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body class="bg-stone-50">
+    <Header />
+    <article>
+      <slot />
+    </article>
+  </body>
+</html>
