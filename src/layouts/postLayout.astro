@@ -1,0 +1,29 @@
+---
+import { dateStrToYearMonthDay } from "../util/util";
+import Layout from "../layouts/layout.astro";
+import "../styles/global.css";
+
+const { frontmatter } = Astro.props;
+const { title, date } = frontmatter;
+const { year, month, day } = dateStrToYearMonthDay(date);
+---
+
+<Layout>
+  <div class="w-1/2 place-self-center">
+    <h1 class="font-zen-maru-gothic text-zinc-800">{title}</h1>
+    <p class="font-m-plus-rounded text-xs text-zinc-700">
+      {year}年 {month}月{day}日
+    </p>
+    <article>
+      <slot />
+    </article>
+  </div>
+</Layout>
+<style>
+  h1 {
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+</style>

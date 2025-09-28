@@ -1,5 +1,8 @@
 ---
+import { dateStrToYearMonthDay } from "../util/util";
 const { title, date, href } = Astro.props;
+console.log(date);
+const { year, month, day } = dateStrToYearMonthDay(date);
 ---
 
 <div
@@ -7,7 +10,9 @@ const { title, date, href } = Astro.props;
 >
   <a href={href} class="link-box-href">
     <h1 class="font-zen-maru-gothic p-2 text-zinc-800">{title}</h1>
-    <p class="font-m-plus-rounded text-xs p-2 text-zinc-700">{date}</p>
+    <p class="font-m-plus-rounded text-xs p-2 text-zinc-700">
+      {year}年 {month}月{day}日
+    </p>
   </a>
 </div>
 <style>
