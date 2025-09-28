@@ -1,5 +1,6 @@
 ---
 import Header from "./header.astro";
+import Footer from "./footer.astro";
 ---
 
 <html lang="ja">
@@ -8,10 +9,11 @@ import Header from "./header.astro";
     <title>ataroh blog</title>
     <link rel="icon" href="../../public/favicon.svg" type="image/svg+xml" />
   </head>
-  <body class="bg-stone-50">
+  <body class="bg-stone-50 min-h-dvh grid grid-rows-[auto_1fr_auto]">
     <Header />
     <article>
       <slot />
     </article>
+    <Footer />
   </body>
 </html>

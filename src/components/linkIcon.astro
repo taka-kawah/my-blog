@@ -4,7 +4,8 @@ const { alt, href, pic, className } = Astro.props;
 
 <a href={href} target="_blank" rel="noopener noreferrer" class={className}>
   <span
-    class="inline-block w-9 h-9 bg-stone-500 [mask-size:contain] [mask-repeat:no-repeat] [mask-position:center]"
+    class="inline-block w-9 h-9 bg-stone-500 [mask-size:contain] [mask-repeat:no-repeat] [mask-position:center]
+      transition delay-50 duration-300 hover:bg-stone-700"
     style={{ WebkitMaskImage: `url(${pic})`, maskImage: `url(${pic})` }}
     aria-label={alt}
     role="img"></span>

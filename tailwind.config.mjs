@@ -35,6 +35,10 @@ const config = {
                     "text-decoration": "none",
                     "color": "inherit",
                     "background-color": "rgba(0, 0, 0, 0.1)"
+                },
+                ".no-decorate": {
+                    "text-decoration": "none",
+                    "color": "inherit"
                 }
             })
         })
