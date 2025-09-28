@@ -16,6 +16,25 @@ const config = {
                 },
                 ".font-reggae-one": {
                     "font-family": "\"Reggae One\", system-ui, -apple-system, \"Segoe UI\", \"Helvetica Neue\", Arial"
+                },
+                ".font-zen-maru-gothic": {
+                    "font-family": "\"Zen Maru Gothic\", ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", \"Helvetica Neue\", Arial"
+                },
+                ".font-potta-one": {
+                    "font-family": "\"Potta One\", system-ui, -apple-system, \"Segoe UI\", \"Helvetica Neue\", Arial"
+                },
+                ".link-box": {
+                    "position": "relative"
+                },
+                ".link-box-href": {
+                    "position": "relative",
+                    "top": 0,
+                    "left": 0,
+                    "width": "100%",
+                    "height": "100%",
+                    "text-decoration": "none",
+                    "color": "inherit",
+                    "background-color": "rgba(0, 0, 0, 0.1)"
                 }
             })
         })

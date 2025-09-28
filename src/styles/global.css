@@ -14,5 +14,11 @@
 /*Reggae One*/
 @import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
 
+/*Zen Maru Gothic*/
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
+
+/*Potta One*/
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/utilities.css" layer(utilities);

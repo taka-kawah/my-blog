@@ -1,0 +1,20 @@
+---
+const { title, date, href } = Astro.props;
+---
+
+<div
+  class="border-2 border-gray-600 my-3 rounded-xl w-200 bg-stone-100 transition delay-50 duration-300 hover:bg-stone-200 link-box"
+>
+  <a href={href} class="link-box-href">
+    <h1 class="font-zen-maru-gothic p-2 text-zinc-800">{title}</h1>
+    <p class="font-m-plus-rounded text-xs p-2 text-zinc-700">{date}</p>
+  </a>
+</div>
+<style>
+  h1 {
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+</style>

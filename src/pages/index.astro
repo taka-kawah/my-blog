@@ -4,6 +4,7 @@ import { TestButton } from "../components/test-button";
 import type { Frontmatter } from "../types/frontmatter";
 import "../styles/global.css";
 import Header from "../layouts/header.astro";
+import Headline from "../components/headline.astro";
 
 console.log("This runs in your terminal, not the browser!");
 
@@ -20,16 +21,18 @@ const blogs = Object.values(
   </head>
   <body>
     <Header />
-    <TestButton client:load />
+    <!-- <TestButton client:load /> -->
     <div class="grid place-content-center">
-      <h2 class="font-reggae-one text-3xl">記事一覧</h2>
-      {
+      <h2 class="font-sans-serif text-xl">Posts📫</h2>
+      <!-- {
         blogs.map((blog) => (
           <a class="font-m-plus-rounded" href={blog.url}>
             {blog.frontmatter.title}
           </a>
         ))
-      }
+      } -->
+      <Headline title="テスト" date="2025-09-26" href="./blog/test" />
+      <Headline title="テスト2" date="2025-09-27" href="./blog/test" />
     </div>
   </body>
 </html>
