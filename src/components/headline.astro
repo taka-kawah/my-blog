@@ -1,7 +1,6 @@
 ---
 import { dateStrToYearMonthDay } from "../util/util";
 const { title, date, href } = Astro.props;
-console.log(date);
 const { year, month, day } = dateStrToYearMonthDay(date);
 ---
 

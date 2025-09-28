@@ -1,0 +1,12 @@
+---
+import LinkIcon from "../components/linkIcon.astro";
+import { accounts } from "../util/data.ts";
+---
+
+<div id="icon-box" class="pt-15 px-5 flex items-center gap-2">
+  {
+    accounts.map((ac) => (
+      <LinkIcon alt={ac.alt} href={ac.href} pic={ac.pic} className="px-1" />
+    ))
+  }
+</div>

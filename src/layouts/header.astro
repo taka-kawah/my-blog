@@ -1,33 +1,24 @@
 ---
-import { LinkIcon } from "../components/link-icon";
+import IconBox from "../components/iconBox.astro";
 ---
 
 <div class="bg-stone-300 rounded-xl flex flex-row">
   <div id="icons" class="basis-1/4">
-    <div id="icon-box" class="pt-15 px-5">
-      <LinkIcon
-        alt="Github"
-        href="https://github.com/taka-kawah"
-        pic="/mark-github-24.svg"
-        className="px-1"
-      />
-      <LinkIcon
-        alt="Bluesky"
-        href="https://bsky.app/profile/ataroh.bsky.social"
-        pic="/Bluesky_Logo.svg"
-        className="px-1"
-      />
-    </div>
+    <IconBox />
   </div>
-  <div id="title-box" class="basis-1/2">
-    <h1
-      class="font-potta-one text-center text-6xl font-thin font-strech-expanded text-orange-700 text-shadow-lg/20 p-2"
-    >
-      高橋あ太郎
-    </h1>
-    <p class="font-m-plus-rounded text-center font-semibold text-gray-600 p-2">
-      日記とかを適当にかきます
-    </p>
+  <div id="title-box" class="basis-1/2 link-box">
+    <a href="/" class="link-box-href">
+      <h1
+        class="font-potta-one text-center text-6xl font-thin font-strech-expanded text-orange-700 text-shadow-lg/20 p-2"
+      >
+        高橋あ太郎
+      </h1>
+      <p
+        class="font-m-plus-rounded text-center font-semibold text-gray-600 p-2"
+      >
+        日記とかを適当にかきます
+      </p>
+    </a>
   </div>
   <div id="hamburger" class="basis-1/4"></div>
 </div>
