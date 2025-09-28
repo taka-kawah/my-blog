@@ -13,16 +13,23 @@ const blogs = Object.values(
 ---
 
 <Layout>
-  <div class="grid place-content-center">
-    <h2 class="font-sans-serif text-xl">Posts📫</h2>
-    {
-      blogs.map((b) => (
-        <Headline
-          title={b.frontmatter.title}
-          date={b.frontmatter.date}
-          href={b.url}
-        />
-      ))
-    }
+  <div class="">
+    <div class="grid place-content-center">
+      <h2 class="font-sans-serif text-xl">Posts📫</h2>
+      {
+        blogs.map((b) => (
+          <Headline
+            title={b.frontmatter.title}
+            date={b.frontmatter.date}
+            href={b.url}
+          />
+        ))
+      }
+    </div>
+    <img
+      src="https://kauntah-svg.vercel.app/counter.svg"
+      referrerpolicy="origin"
+      class="block absolute -translate-y-1/2 w-[10.7%] h-auto pointer-events-none select-none"
+    />
   </div>
 </Layout>
