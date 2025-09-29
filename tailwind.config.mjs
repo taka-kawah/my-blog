@@ -2,6 +2,18 @@ import plugin from "tailwindcss/plugin"
 
 /** @type {import('tailwindcss').Config} */
 const config = {
+    content: [
+        './src/**/*.{astro,html,js,jsx,ts,tsx,vue,md,mdx}',
+        './pages/**/*.{astro,html,js,jsx,ts,tsx,vue,md,mdx}',
+        './components/**/*.{astro,html,js,jsx,ts,tsx,vue,md,mdx}',
+        './layouts/**/*.{astro,html,js,jsx,ts,tsx,vue,md,mdx}',
+    ],
+    safelist: [
+        'w-[10.7%]',
+        'absolute',
+        '-translate-y-1/2',
+    ],
+    theme: { extend: {} },
     plugins: [
         plugin(({addUtilities}) => {
             addUtilities({
