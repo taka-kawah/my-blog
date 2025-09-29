@@ -2,7 +2,7 @@
 layout: ../../layouts/postLayout.astro
 
 title: テスト2
-date: 2025-09-26
+date: 2025-09-27
 ---
 
 がんばってはいる...

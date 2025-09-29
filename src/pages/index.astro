@@ -7,9 +7,15 @@ import Layout from "../layouts/layout.astro";
 
 console.log("This runs in your terminal, not the browser!");
 
-const blogs = Object.values(
-  import.meta.glob("./blog/*.md", { eager: true })
-) as MarkdownInstance<Frontmatter>[];
+const blogs = (
+  Object.values(
+    import.meta.glob("./blog/*.md", { eager: true })
+  ) as MarkdownInstance<Frontmatter>[]
+).sort(
+  (a, b) =>
+    new Date(a.frontmatter.date).getTime() -
+    new Date(b.frontmatter.date).getTime()
+);
 ---
 
 <Layout>
