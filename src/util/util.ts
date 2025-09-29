@@ -8,7 +8,7 @@ export const dateStrToYearMonthDay = (dateStr: string): yearMonthDay => {
   const date = new Date(dateStr);
   return {
     year: date.getFullYear(),
-    month: date.getMonth(),
-    day: date.getDay(),
+    month: date.getMonth() + 1, // 月を0始まりで数える
+    day: date.getDate(),
   };
 };
