@@ -13,8 +13,8 @@ const blogs = (
   ) as MarkdownInstance<Frontmatter>[]
 ).sort(
   (a, b) =>
-    new Date(a.frontmatter.date).getTime() -
-    new Date(b.frontmatter.date).getTime()
+    new Date(b.frontmatter.date).getTime() -
+    new Date(a.frontmatter.date).getTime()
 );
 ---
 
