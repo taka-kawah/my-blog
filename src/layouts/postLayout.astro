@@ -9,14 +9,14 @@ const { year, month, day } = dateStrToYearMonthDay(date);
 ---
 
 <Layout>
-  <div class="w-full sm:w-200 place-self-center p-5">
+  <div class="sm:w-200 place-self-center p-5">
     <h1 class="font-zen-maru-gothic text-3xl sm:text-5xl py-5 sm:py-3">
       {title}
     </h1>
     <p class="font-m-plus-rounded sm:text-xs text-zinc-700">
       {year}年 {month}月{day}日
     </p>
-    <article class="py-10 sm:py-20">
+    <article class="py-10 w-full sm:py-20">
       <slot />
     </article>
   </div>
