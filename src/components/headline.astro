@@ -5,11 +5,15 @@ const { year, month, day } = dateStrToYearMonthDay(date);
 ---
 
 <div
-  class="border-2 border-gray-600 my-3 rounded-xl w-200 bg-stone-100 transition delay-50 duration-300 hover:bg-stone-200 link-box"
+  class="border-2 border-gray-600 my-1 sm:my-3 rounded-xl md:w-200 bg-stone-100 transition delay-50 duration-300 hover:bg-stone-200 link-box w-screen"
 >
   <a href={href} class="link-box-href">
-    <h1 class="font-zen-maru-gothic p-2 text-zinc-800">{title}</h1>
-    <p class="font-m-plus-rounded text-xs p-2 text-zinc-700">
+    <h1
+      class="font-zen-maru-gothic py-1 px-2 sm:py-2 text-zinc-800 text-xl sm:text-3xl"
+    >
+      {title}
+    </h1>
+    <p class="font-m-plus-rounded py-1 px-2 text-xs sm:py-2 text-zinc-700">
       {year}年 {month}月{day}日
     </p>
   </a>
