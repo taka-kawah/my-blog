@@ -9,7 +9,7 @@ console.log("This runs in your terminal, not the browser!");
 
 const blogs = (
   Object.values(
-    import.meta.glob("./blog/*.{md, mdx}", { eager: true })
+    import.meta.glob("./blog/*.md*", { eager: true })
   ) as MarkdownInstance<Frontmatter>[]
 ).sort(
   (a, b) =>
