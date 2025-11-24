@@ -4,6 +4,8 @@ import tailwind from "@tailwindcss/vite";
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import mdx from "@astrojs/mdx";
+import remarkEmbedder from "@remark-embedder/core";
+import { YoutubeTransformer } from "./src/plugins/youtube.ts";
 
 // https://astro.build/config
 /** @type {import("astro").AstroUserConfig} */
@@ -13,7 +15,10 @@ const config = defineConfig({
         plugins: [tailwind()]
     },
     markdown: {
-        remarkPlugins: [remarkMath],
+        remarkPlugins: [
+            remarkMath, 
+            [remarkEmbedder.default, {transformers: [YoutubeTransformer]}]
+        ],
         rehypePlugins: [rehypeKatex]
     }
 })
