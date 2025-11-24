@@ -20,5 +20,8 @@
 /*Potta One*/
 @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
 
+/*Manrope*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/utilities.css" layer(utilities);

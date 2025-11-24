@@ -35,6 +35,9 @@ const config = {
                 ".font-potta-one": {
                     "font-family": "\"Potta One\", system-ui, -apple-system, \"Segoe UI\", \"Helvetica Neue\", Arial"
                 },
+                ".font-manrope": {
+                    "font-family": "\"Manrope\", sans-serif"
+                },
                 ".link-box": {
                     "position": "relative"
                 },

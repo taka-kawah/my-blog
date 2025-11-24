@@ -23,7 +23,8 @@
     "react-dom": "^19.1.1",
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0",
-    "tailwindcss": "^4.1.13"
+    "tailwindcss": "^4.1.13",
+    "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
     "typescript": "^5.9.2"

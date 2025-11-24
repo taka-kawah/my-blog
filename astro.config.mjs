@@ -5,7 +5,8 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import mdx from "@astrojs/mdx";
 import remarkEmbedder from "@remark-embedder/core";
-import { YoutubeTransformer } from "./src/plugins/youtube.ts";
+import { YoutubeTransformer } from "./src/plugins/remark/youtube.ts";
+import articleFont from "./src/plugins/rehype/articleFont.ts";
 
 // https://astro.build/config
 /** @type {import("astro").AstroUserConfig} */
@@ -19,7 +20,10 @@ const config = defineConfig({
             remarkMath, 
             [remarkEmbedder.default, {transformers: [YoutubeTransformer]}]
         ],
-        rehypePlugins: [rehypeKatex]
+        rehypePlugins: [
+            rehypeKatex,
+            articleFont
+        ]
     }
 })
 
