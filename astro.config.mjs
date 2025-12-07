@@ -7,6 +7,7 @@ import mdx from "@astrojs/mdx";
 import remarkEmbedder from "@remark-embedder/core";
 import { YoutubeTransformer } from "./src/plugins/remark/youtube.ts";
 import articleFont from "./src/plugins/rehype/articleFont.ts";
+import newLine from "./src/plugins/rehype/newLine.ts";
 
 // https://astro.build/config
 /** @type {import("astro").AstroUserConfig} */
@@ -22,7 +23,8 @@ const config = defineConfig({
         ],
         rehypePlugins: [
             rehypeKatex,
-            articleFont
+            articleFont,
+            newLine
         ]
     }
 })
